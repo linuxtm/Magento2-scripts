@@ -60,7 +60,7 @@ if ! [ -x "$(command -v php)" ]; then
   yum install -y php${V}u-bcmath \
 	         php${V}u-cli \
 	         php${V}u-common \
-    	     php${V}u-fpm \
+    	     	 php${V}u-fpm \
 	         php${V}u-gd \
 	         php${V}u-intl \
 	         php${V}u-json \
@@ -72,7 +72,7 @@ if ! [ -x "$(command -v php)" ]; then
 	         php${V}u-process \
 	         php${V}u-soap \
 	         php${V}u-xml
- echo "${green}Enabling PHP-FPM...${no}"
+  echo "${green}Enabling PHP-FPM...${no}"
   systemctl enable php-fpm
   echo "${green}Starting PHP-FPM...${no}"
   systemctl start php-fpm
